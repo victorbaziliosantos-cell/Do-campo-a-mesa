@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌿 AgroSustentável - Projeto Agrinho 2026</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo">
+            <h1><i class="fas fa-leaf"></i> AgroSustentável</h1>
+            <p>Projeto Agrinho 2026</p>
+        </div>
+        <nav>
+            <a href="#inicio" class="ativo">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#praticas">Práticas</a>
+            <a href="#calculadora">Calculadora</a>
+            <a href="#quiz">Quiz</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!-- Hero -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <h2>🌎 Agricultura Sustentável <br>é o Futuro</h2>
+            <p>Produzir alimentos sem destruir o planeta é possível.</p>
+            <a href="#quiz" class="btn"><i class="fas fa-gamepad"></i> Teste seus conhecimentos</a>
+        </div>
+    </section>
+
+    <!-- Destaques -->
+    <section class="destaques">
+        <div class="container">
+            <h2>Impacto da Agricultura Sustentável</h2>
+            <div class="cards">
+                <div class="card"><div class="icon">🌱</div><h3>+40%</h3><p>produtividade</p></div>
+                <div class="card"><div class="icon">💧</div><h3>50%</h3><p>economia de água</p></div>
+                <div class="card"><div class="icon">🦋</div><h3>3x</h3><p>biodiversidade</p></div>
+                <div class="card"><div class="icon">🌍</div><h3>-30%</h3><p>emissões de CO₂</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <h2><i class="fas fa-book-open"></i> Sobre o Projeto</h2>
+            <div class="sobre-content">
+                <p>O <strong>AgroSustentável</strong> conscientiza sobre práticas agrícolas que respeitam o meio ambiente, garantem alimentos saudáveis e preservam os recursos naturais.</p>
+                <div class="info-grid">
+                    <div class="info-box"><i class="fas fa-users"></i><span>6 alunos</span></div>
+                    <div class="info-box"><i class="fas fa-chalkboard-user"></i><span>1 professor</span></div>
+                    <div class="info-box"><i class="fas fa-handshake"></i><span>3 parceiros</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Práticas -->
+    <section id="praticas" class="praticas">
+        <div class="container">
+            <h2><i class="fas fa-seedling"></i> Boas Práticas</h2>
+            <div class="praticas-grid">
+                <div class="pratica"><div class="icon">🌳</div><h3>Agrofloresta</h3><p>+40% produtividade</p></div>
+                <div class="pratica"><div class="icon">💧</div><h3>Gotejamento</h3><p>-50% água</p></div>
+                <div class="pratica"><div class="icon">🪱</div><h3>Compostagem</h3><p>100% orgânico</p></div>
+                <div class="pratica"><div class="icon">🌾</div><h3>Plantio Direto</h3><p>Solo protegido</p></div>
+                <div class="pratica"><div class="icon">🐞</div><h3>Controle Biológico</h3><p>Sem veneno</p></div>
+                <div class="pratica"><div class="icon">☀️</div><h3>Energia Solar</h3><p>Energia limpa</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculadora -->
+    <section id="calculadora" class="calculadora">
+        <div class="container">
+            <h2><i class="fas fa-calculator"></i> Calculadora de Pegada de Carbono</h2>
+            <div class="calc-box">
+                <div class="calc-inputs">
+                    <select id="tipo"><option value="hortalica">🥬 Hortaliças</option><option value="carne">🥩 Carne bovina</option><option value="frango">🍗 Frango</option><option value="leite">🥛 Leite</option></select>
+                    <input type="number" id="kg" placeholder="Quantidade (kg)" value="1">
+                    <select id="modo"><option value="convencional">Convencional</option><option value="organico">Orgânico</option></select>
+                    <button onclick="calcular()"><i class="fas fa-calculator"></i> Calcular</button>
+                </div>
+                <div class="calc-resultado" id="resultado"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiz -->
+    <section id="quiz" class="quiz">
+        <div class="container">
+            <h2><i class="fas fa-gamepad"></i> Quiz AgroSustentável</h2>
+            <div id="quizArea">
+                <div id="quizInicio"><button class="btn" onclick="iniciarQuiz()">▶ Começar Quiz</button></div>
+                <div id="quizPergunta" style="display:none"></div>
+                <div id="quizResultado" style="display:none"></div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>🌿 AgroSustentável - Projeto Agrinho 2026 | Ensino Médio</p>
+        <p>ODS 2, 6, 12, 13, 15</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
